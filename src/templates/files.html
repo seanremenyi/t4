@@ -1,0 +1,68 @@
+{% extends "bootstrap/base.html" %}
+{% block html_attribs %} lang"en"{% endblock %}
+{% block title %}S3 list{% endblock %}
+
+{% block navbar %}
+<div class="navbar navbar-fixed-top">
+  <!-- ... -->
+</div>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+      <div class="row">
+          <div class="col-12-xs">
+              <h1>Facial Recognition</h1>
+            
+              {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                  <p class="bg-info" style="padding: 15px;">
+                  {% for message in messages %}
+                    {{ message }}<br>
+                  {% endfor %}
+                  </p>
+                {% endif %}
+              {% endwith %}
+              <hr>
+              
+              <form class="upload-form" action="/upload" method="post" enctype="multipart/form-data">             
+                <p><input type="file" name="file"></p>
+                <button type="submit" name="submit" class="btn btn-primary">Upload</button>
+              </form>
+              
+              <hr>
+              
+              <table class="table table-striped">
+                  <tr>
+                      <th></th>
+                      <th>Filename</th>
+                      <th>Last Modified</th>
+                      <th>File Type</th>
+                      <th></th>
+                  </tr>
+                  {% for f in files%}
+                  <tr>
+                      <td>
+                          <form class="scan-form" action="{{ url_for('scan') }}" method = "POST">
+                              <input type="hidden" name="key" value="{{ f.key }}">
+                              <button type="submit" class="btn btn-info btn-sm">Scan</button>
+                          </form>
+                      </td>                      
+                      <td>{{ f.key }}</td>
+                      <td>{{ f.last_modified  | datetimeformat }}</td>
+                      <td>{{ f.key | file_type}}</td>
+                      <td>
+                          <form class="delete-form" action="{{ url_for('delete') }}" method = "POST">
+                              <input type="hidden" name="key" value="{{ f.key }}">
+                              <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                          </form>
+                      </td>
+                  </tr>
+                  {% endfor %}
+              </table>
+              
+              
+          </div>
+      </div>
+  </div>
+{% endblock %}

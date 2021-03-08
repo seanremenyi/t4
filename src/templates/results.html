@@ -1,0 +1,117 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Results{% endblock %}
+
+{% block navbar %}
+<div class="navbar navbar-fixed-top">
+  <!-- ... -->
+</div>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+      <div class="row">
+          <div class="col-12-xs">
+            <h1>Results</h1>
+                <table class="table table-striped">
+                  <tr>
+                    <th>Age Range:</th>
+                    <td>{{ ageL }} - {{ageH}}</td>
+                    <th>-</th>  
+                  </tr>
+                  <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <th>Confidence</th>
+                  </tr>
+                  <tr>
+                    <th>Gender</th>
+                    <td>{{gender}}</td>
+                    <td>{{genderconf}}</td>
+                  </tr>
+                   <tr>
+                    <th>Mustache</th>
+                    <td>{{mustache}}</td>
+                    <td>{{mustacheconf}}</td>
+                  </tr>
+                   <tr>
+                    <th>Beard</th>
+                    <td>{{beard}}</td>
+                    <td>{{beardconf}}</td>
+                  </tr>
+                   <tr>
+                    <th>Glasses</th>
+                    <td>{{glasses}}</td>
+                    <td>{{glassesconf}}</td>
+                  </tr>
+                    <tr>
+                    <th>Sunglasses</th>
+                    <td>{{sunglasses}}</td>
+                    <td>{{sunglassesconf}}</td>
+                  </tr>
+                    <tr>
+                    <th>Eyes Open</th>
+                    <td>{{eyes}}</td>
+                    <td>{{eyesconf}}</td>
+                  </tr>
+                   <tr>
+                    <th>Mouth Open</th>
+                    <td>{{mouth}}</td>
+                    <td>{{mouthconf}}</td>
+                  </tr>
+                    <tr>
+                    <th>Smile</th>
+                    <td>{{smile}}</td>
+                    <td>{{smileconf}}</td>
+                  </tr>
+                  <tr>
+                    <th>-</th>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <th>Emotions</th>
+                    <th>Confidence</th>
+                    <th>-</th>
+                  </tr>
+                  <tr>
+                    <th>Happy</th>
+                    <td>{{happyconf}}</td>
+                    <th>-</th>
+                  </tr>
+                  <tr>
+                    <th>Sad</th>
+                    <td>{{sadconf}}</td>
+                    <th>-</th>
+                  </tr>
+                  <tr>
+                    <th>Angry</th>
+                    <td>{{angryconf}}</td>
+                    <th>-</th>  
+                  </tr>
+                  <tr>
+                    <th>Confused</th>
+                    <td>{{confusedconf}}</td>
+                    <th>-</th>  
+                  </tr>
+                  <tr>
+                    <th>Surpised</th>
+                    <td>{{surprisedconf}}</td>
+                    <th>-</th>  
+                  </tr>
+                  <tr>
+                    <th>Fear</th>
+                    <td>{{fearconf}}</td>
+                    <th>-</th>  
+                  </tr>
+                  <tr>
+                    <th>Calm</th>
+                    <td>{{calmconf}}</td>
+                    <th>-</th>  
+                  </tr>
+                  
+                  
+                </table>
+          </div>
+      </div>
+  </div>
+{% endblock %}

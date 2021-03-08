@@ -1,0 +1,7 @@
+export FLASK_APP=app.py
+export FLASK_DEBUG=1
+
+export S3_BUCKET=facialrekog-sydney
+export S3_KEY=AKIA42OOKUWVNGK54KE2
+export S3_SECRET=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
+export S3_URL=https://frsydney-881437877674.s3-accesspoint.ap-southeast-2.amazonaws.com/
