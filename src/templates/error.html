@@ -1,0 +1,29 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Error{% endblock %}
+
+{% block navbar %}
+<div class="navbar navbar-fixed-top">
+  <!-- ... -->
+</div>
+{% endblock %}
+
+{% block content %}
+  <h1>Uh-Oh, There's an error</h1>
+  <table class="table table-striped">
+    <tr>
+        <th>Possible reasons:</th>
+    </tr>
+    <tr>
+        <td>Hit the upload button before a file was chosen</td>
+    </tr>
+    <tr>
+        <td>Uploaded a non image file</td>
+    </tr>
+    <tr>
+        <td>Sean's broke and stopped the Server</td>
+    </tr>    
+        <th><a href = "files">Let's Try Again</a></th>
+    </tr>
+  </table>
+
+{% endblock %}

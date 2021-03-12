@@ -1,6 +1,6 @@
 {% extends "bootstrap/base.html" %}
 {% block html_attribs %} lang"en"{% endblock %}
-{% block title %}S3 list{% endblock %}
+{% block title %}Upload{% endblock %}
 
 {% block navbar %}
 <div class="navbar navbar-fixed-top">
@@ -26,7 +26,7 @@
               <hr>
               
               <form class="upload-form" action="/upload" method="post" enctype="multipart/form-data">             
-                <p><input type="file" name="file"></p>
+                <p><input type="file" name="file" accept=".jpg,.gif,.png"></p>
                 <button type="submit" name="submit" class="btn btn-primary">Upload</button>
               </form>
               
