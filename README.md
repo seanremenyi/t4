@@ -1,7 +1,17 @@
 # Facial Recognition Application
 
-https://github.com/seanremenyi/FacialRecog
+https://github.com/seanremenyi/t4
 
+https://nuage.technology/
+
+#### App vs. MVP
+
+Due to time constraints and unforseen blockers, this facial recognition app needed to be scaled back to be able to deliver a working minimum viable product. As such this readme will still be describing the goal of this project as it will be carried on with even after the submission date. The app will be built as per the specifications outlined in this readme however it should be noted the app in it's current form is scaled down and at the moment, this mimimum viable product's features include:
+1. A flask/bootstrap application hosted on an EC2 with AWS
+2. Gunicorn/Nginx serving the application
+3. Domain name hosting with route53 for nuage.technology
+4. S3 storage upload/delete and attached to AWS machine learning facial re service Rekognition
+5. A user friendly design around ease of use that's straight to the point and functional
 
 #### Purpose
 
