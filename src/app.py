@@ -13,7 +13,6 @@ s3 = boto3.client(
     aws_secret_access_key=S3_SECRET
     )
 
-
 app = Flask(__name__)
 Bootstrap(app)
 app.secret_key= 'secret'
