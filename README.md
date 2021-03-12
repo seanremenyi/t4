@@ -147,6 +147,70 @@ This project will adopt an agile workflow. I will be planning 2 spints. One for 
 **Feb. 21st 5:00 PM**
 ![day5](docs/workflow/s2d1.PNG)
 
+**Feb. 25th 5:00 PM**
+![day5](docs/workflow/1.PNG)
+
+**Feb. 28th 12:00 PM**
+![day5](docs/workflow/2.PNG)
+
+**Mar. 3th 6:00 PM**
+![day5](docs/workflow/3.PNG)
+
+**Mar. 4th 6:00 PM**
+![day5](docs/workflow/4.PNG)
+
+**Mar. 5th 6:00 PM**
+![day5](docs/workflow/5.PNG)
+
+**Mar. 6th 12:00 PM**
+![day5](docs/workflow/6.PNG)
+
+**Mar. 7th 12:00 PM**
+![day5](docs/workflow/7.PNG)
+
+**Mar. 8th 6:00 PM**
+![day5](docs/workflow/8.PNG)
+
+**Mar. 9th 6:00 PM**
+![day5](docs/workflow/9.PNG)
+
+**Mar. 10th 6:00 PM**
+![day5](docs/workflow/10.PNG)
+
+**Mar. 11th 6:00 PM**
+![day5](docs/workflow/11.PNG)
+
+#### Testing
+
+For this project, the unittest module from the python library was used with tests created to test the routes and make sure they return with a status code of 200. As for user testing I reached out to friends and family to try the app and give me some feedback, in case of any errors they may of ran into I asked for screen shots which will be provided below. I had the same testing group (other than one who had to drop out) to be able to test both in development and in production. I gave them a list of features and asked them to let me know if it worked or if the application threw an error. I took all their feedback and compiled it into a spreadsheet which is included below along with screenshots of errors.
+
+##### Testing Documentation
+![tests](docs/workflow/testing.PNG)
+
+##### Errors in development
+![errors](docs/workflow/deverror1.PNG)
+
+I addressed the errors in development but also realised that i didn't want my users to receive a flask error if the application threw an error. As such I created an html page for the errors to route traffic to if something in the application fails.
+
+##### Errors in production
+![errors](docs/workflow/deverror1.PNG)
+
+##### Screenshots of the application working
+![working](docs/workflow/work1.PNG)
+
+##### Screenshots of the application working
+![working](docs/workflow/work2.PNG)
+
+##### Screenshots of the application working
+![working](docs/workflow/work4.PNG)
+
+
+
+
+
+
+
+
 
 
 
