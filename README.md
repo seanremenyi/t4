@@ -153,31 +153,29 @@ This project will adopt an agile workflow. I will be planning 2 spints. One for 
 **Feb. 28th 12:00 PM**
 ![day5](docs/workflow/2.PNG)
 
-**Mar. 3th 6:00 PM**
+**Mar. 3th 7:00 PM**
+This was a major blocker for me. I was contacted by aws to inform me that my keys had been exposed on github. I made the mistake of  typo in my .env file and as such needed to delete all my users in my AWS account. As such it was a big set back as i had to rebuild the infrastructure and be more careful and more secure. I had to talk to AWS over the phone to get this resolved and my account back to normal.
 ![day5](docs/workflow/3.PNG)
 
-**Mar. 4th 6:00 PM**
+**Mar. 7th 12:00 PM**
 ![day5](docs/workflow/4.PNG)
 
-**Mar. 5th 6:00 PM**
+**Mar. 8th 6:00 PM**
 ![day5](docs/workflow/5.PNG)
 
-**Mar. 6th 12:00 PM**
+**Mar. 9th 6:00 PM**
 ![day5](docs/workflow/6.PNG)
 
-**Mar. 7th 12:00 PM**
+**Mar. 10th 6:00 PM**
 ![day5](docs/workflow/7.PNG)
 
-**Mar. 8th 6:00 PM**
+**Mar. 11th 6:00 PM**
 ![day5](docs/workflow/8.PNG)
 
-**Mar. 9th 6:00 PM**
+**Mar. 12th 6:00 PM**
 ![day5](docs/workflow/9.PNG)
 
-**Mar. 10th 6:00 PM**
-![day5](docs/workflow/10.PNG)
-
-**Mar. 11th 6:00 PM**
+**Mar. 12th 6:00 PM**
 ![day5](docs/workflow/11.PNG)
 
 #### Testing
@@ -193,15 +191,12 @@ For this project, the unittest module from the python library was used with test
 I addressed the errors in development but also realised that i didn't want my users to receive a flask error if the application threw an error. As such I created an html page for the errors to route traffic to if something in the application fails.
 
 ##### Errors in production
-![errors](docs/workflow/deverror1.PNG)
+![errors](docs/workflow/proderror1.PNG)
 
 ##### Screenshots of the application working
 ![working](docs/workflow/work1.PNG)
-
-##### Screenshots of the application working
+![working](docs/workflow/work3.PNG)
 ![working](docs/workflow/work2.PNG)
-
-##### Screenshots of the application working
 ![working](docs/workflow/work4.PNG)
 
 
