@@ -52,18 +52,16 @@ The target audience for this application will be anyone you wants to get informa
 #### Tech Stack
 The application will use the following tech stack along with each tech's purpose
 - **Python** used for the backend of the application
-- **Vue** used for the front end of the application
 - **Flask** used for the web framework
+- **Flask-Bootstrap** templating and front end
+- **Gunicorn** WSGI
+- **Nginx** Serve web content
+- **Boto3** connect python to AWS
 - **AWS ReKognition** used for image recognition
-- **PostgreSQL** used for the database
-- **SQLAlchemy** used to avoid raw SQL inputs
 - **AWS Route53** used for DNS
-- **Bcrypt** used for password hashing
-- **JWTManager** used for JSON web tokens
-- **HTML/CSS** used for website content and styling
+- **HTML** used for website content
 - **AWS S3** used for image hosting
-- **AWS Frameworks** used for hosting the application in the cloud
-- **Marshmallow** used as an ORM
+- **AWS** used for hosting the application in the cloud
 
 #### Dataflow Diagram
 ![infrastructure diagram](docs/FRdataflow.png)
@@ -166,16 +164,14 @@ This was a major blocker for me. I was contacted by aws to inform me that my key
 **Mar. 9th 6:00 PM**
 ![day5](docs/workflow/6.PNG)
 
-**Mar. 10th 6:00 PM**
-![day5](docs/workflow/7.PNG)
-
+After this day I realised I would not be able to accomplish everything I wanted to with this application. As such I altered my workflow to give a working minimum viable product and time to allow for further testing in development. As such I moved all tickets that I wouldn't be able to get to to a future sprint and focus on being able to accomplish what I can here and enhance the app i currently have.
 **Mar. 11th 6:00 PM**
 ![day5](docs/workflow/8.PNG)
 
 **Mar. 12th 6:00 PM**
 ![day5](docs/workflow/9.PNG)
 
-**Mar. 12th 6:00 PM**
+**Next Sprint**
 ![day5](docs/workflow/11.PNG)
 
 #### Testing
@@ -187,7 +183,7 @@ For this project, the unittest module from the python library was used with test
 
 ##### Errors in development
 ![errors](docs/workflow/deverror1.PNG)
-
+![errors](docs/workflow/deverror2.PNG)
 I addressed the errors in development but also realised that i didn't want my users to receive a flask error if the application threw an error. As such I created an html page for the errors to route traffic to if something in the application fails.
 
 ##### Errors in production
